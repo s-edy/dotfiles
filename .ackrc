@@ -1,0 +1,14 @@
+--sort-files
+--color
+--pager=less -r
+
+--ignore-dir=.idea/
+--ignore-dir=node_modules/
+
+--type-add=html=htm,html
+--type-add=css=scss
+--type-add=python=.py
+--type-add=ruby=.haml,.rselm,.feature,.ru,.lock
+--type-set=coffeescript=.coffee
+--type-set=coffee=.coffee
+

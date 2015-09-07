@@ -1,0 +1,15 @@
+[submodule ".tmux/tmux-powerline"]
+	path = .tmux/tmux-powerline
+	url = https://github.com/erikw/tmux-powerline.git
+[submodule ".vim/bundle/neobundle.vim"]
+	path = .vim/bundle/neobundle.vim
+	url = https://github.com/Shougo/neobundle.vim
+[submodule ".vim/bundle/vimproc"]
+	path = .vim/bundle/vimproc
+	url = https://github.com/Shougo/vimproc
+[submodule "zsh/completions/hub"]
+	path = zsh/completions/hub
+	url = git@github.com:github/hub.git
+[submodule "zsh/zsh-notify"]
+	path = zsh/zsh-notify
+	url = git@github.com:marzocchi/zsh-notify.git

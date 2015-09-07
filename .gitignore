@@ -1,0 +1,21 @@
+# OS
+.DS_Store
+
+# editor
+.vim/.netrwhist
+*.swp
+.vim/bundle/*
+
+# IDE
+.project
+.settings
+.buildpath
+.idea
+*.iml
+
+# git
+.gitconfig
+
+# zsh
+.zshrc-local
+.zshenv-local

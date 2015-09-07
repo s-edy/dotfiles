@@ -1,0 +1,60 @@
+# Options
+# ===================================================================
+
+# Sets the visual bell setting for this window.
+vbell off
+
+# Sets whether screen will automatically detach upon hangup
+autodetach on
+
+# Select whether you want to see the copyright notice during startup.
+startup_message off
+
+# Same as the scrollback command except that the default setting for new
+# windows is changed. Initial setting is 100.
+defscrollback 1000
+
+# This command configures the use and emulation of the terminal's
+# hard-status line.
+# %m month
+hardstatus alwayslastline "%{= gk}[%m/%d %02c:%s] %{gW} %-w%{= wk}%n %t%{-}%+w %=%{gk}$USER@$HOSTNAME[$LANG] (%l) "
+
+# Set the command character to x and the character generating a literal
+# command character (by triggering the "meta" command) to y (similar to
+# the -e option).
+escape ^z^z
+
+# Same as the bce command except that the default setting for new windows
+# is changed. Initial setting is `off'.
+defbce "on"
+
+# Set the title for all shells created during startup or by the C-A C-c
+# command.
+shelltitle '% |term'
+
+# In each window's environment screen opens, the $TERM variable is set to
+# "screen" by default.
+#
+# Specified it below because I wanted to use 256 colors.
+term xterm-256color
+
+# Key bindings
+# ===================================================================
+
+# Opens a new window for connecting on ssh.
+bind s colon 'screen ssh '
+
+# Cannot destroy current window
+bind k
+bind ^k
+
+# Cannot write out a ".termcap" file.
+bind .
+
+# Cannot kill all windows and terminate screen.
+bind ^\
+bind \\
+
+# Cannot Write a hardcopy of the current window to the file "hardcopy.n".
+bind ^h
+bind h
