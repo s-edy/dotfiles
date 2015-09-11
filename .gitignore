@@ -4,7 +4,6 @@
 # editor
 .vim/.netrwhist
 *.swp
-.vim/bundle/*
 
 # IDE
 .project
