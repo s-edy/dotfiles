@@ -10,6 +10,3 @@
 [submodule "zsh/completions/hub"]
 	path = zsh/completions/hub
 	url = git@github.com:github/hub.git
-[submodule "zsh/zsh-notify"]
-	path = zsh/zsh-notify
-	url = git@github.com:marzocchi/zsh-notify.git

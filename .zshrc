@@ -124,9 +124,9 @@ if [ "`boot2docker status`" = "running" ]; then
 fi
 
 # Notification if long execution time
-source $HOME/var/dotfiles/zsh/zsh-notify/notify.plugin.zsh
-export SYS_NOTIFIER=/usr/local/bin/terminal-notifier
-export NOTIFY_COMMAND_COMPLETE_TIMEOUT=30
+#source $HOME/var/dotfiles/zsh/zsh-notify/notify.plugin.zsh
+#export SYS_NOTIFIER=/usr/local/bin/terminal-notifier
+#export NOTIFY_COMMAND_COMPLETE_TIMEOUT=30
 
 # direnv
 eval "$(direnv hook zsh)"
