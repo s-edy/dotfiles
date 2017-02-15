@@ -82,10 +82,10 @@ alias sx='screen -x'
 alias x=exit
 alias df='df -hH'
 alias du='du -h'
-alias grep='grep --color=auto'
+#alias grep='grep --color=auto'
 alias less="less -P '%f line:%l/%L %P\% (%Bbyte)'"
 alias diff='colordiff -u'
-alias git=hub
+#alias git=hub
 alias updatedb='sudo /usr/libexec/locate.updatedb'
 export LESS='-R'
 export LESSOPEN='| /usr/local/bin/src-hilite-lesspipe.sh %s'
@@ -118,10 +118,10 @@ compinit -u
 # PHPBrew
 source $HOME/.phpbrew/bashrc
 
-# to connect docker server
-if [ "`boot2docker status`" = "running" ]; then
-    eval $(boot2docker shellinit 2>/dev/null)
-fi
+## to connect docker server
+#if [ "`boot2docker status`" = "running" ]; then
+#    eval $(boot2docker shellinit 2>/dev/null)
+#fi
 
 # Notification if long execution time
 #source $HOME/var/dotfiles/zsh/zsh-notify/notify.plugin.zsh
