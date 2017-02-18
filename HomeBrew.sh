@@ -18,6 +18,7 @@ fomulas=( \
     makedepend \
     nodebrew \
     openssl \
+    pstree \
     python \
     rbenv \
     source-highlight \

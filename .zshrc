@@ -118,11 +118,6 @@ compinit -u
 # PHPBrew
 source $HOME/.phpbrew/bashrc
 
-## to connect docker server
-#if [ "`boot2docker status`" = "running" ]; then
-#    eval $(boot2docker shellinit 2>/dev/null)
-#fi
-
 # Notification if long execution time
 #source $HOME/var/dotfiles/zsh/zsh-notify/notify.plugin.zsh
 #export SYS_NOTIFIER=/usr/local/bin/terminal-notifier

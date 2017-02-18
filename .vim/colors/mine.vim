@@ -14,7 +14,7 @@ hi Folded       ctermfg=7 ctermbg=236
 
 hi Indentifier  ctermfg=0 ctermbg=15
 hi Define       ctermfg=81
-hi Comment      ctermfg=239
+hi Comment      ctermfg=244
 hi Statement    ctermfg=83
 hi Constant     ctermfg=199
 hi Operator     ctermfg=11
