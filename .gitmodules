@@ -10,3 +10,6 @@
 [submodule "zsh/completions/hub"]
 	path = zsh/completions/hub
 	url = git@github.com:github/hub.git
+[submodule "powerline/fonts"]
+	path = powerline/fonts
+	url = git@github.com:powerline/fonts.git
