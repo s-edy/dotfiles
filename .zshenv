@@ -31,13 +31,11 @@ done
 typeset -U PATH
 
 # fpath
-fpath=(${ZDOTDIR}/function $fpath)
-
-# zsh completion
-fpath=(/usr/local/share/zsh-completions $fpath)
-
-# hub / docker / nodebrew
-fpath=(/usr/local/share/zsh/site-functions $fpath)
+fpath=(
+    /usr/local/share/zsh-completions \
+    $HOME/.zsh-completions \
+    $fpath \
+)
 
 # Golang
 export GOPATH=$HOME/.golang
