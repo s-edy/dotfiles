@@ -5,15 +5,14 @@ fomulas=( \
     ansible \
     autoconf \
     automake \
-    boot2docker \
     colordiff \
     curl \
     direnv \
-    docker \
     git \
     gnu-sed \
     go \
     graphviz \
+    htop \
     hub \
     makedepend \
     nodebrew \
@@ -41,6 +40,9 @@ for f in ${fomulas[@]}
 do
     brew install $f
 done
+
+# for superline
+brew install macvim --env-std --with-override-system-vim
 
 brew upgrade
 brew prune
