@@ -83,7 +83,7 @@ alias x=exit
 alias df='df -hH'
 alias du='du -h'
 #alias grep='grep --color=auto'
-alias less="less -P '%f line:%l/%L %P\% (%Bbyte)'"
+alias less="less -SRn -P '%f line:%l/%L %P\% (%Bbyte)'"
 alias diff='colordiff -u'
 #alias git=hub
 alias updatedb='sudo /usr/libexec/locate.updatedb'
