@@ -54,6 +54,7 @@ setopt PROMPT_SUBST
 setopt PUSHD_IGNORE_DUPS
 setopt SHARE_HISTORY
 setopt ZLE
+setopt CLOBBER
 unsetopt BG_NICE
 
 # completion color
@@ -133,4 +134,7 @@ fi
 # powerline
 powerline-daemon -q
 source /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
+
+# bundle exec
+source $HOME/var/dotfiles/zsh/zsh-bundle-exec/zsh-bundle-exec.zsh
 
