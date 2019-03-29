@@ -7,13 +7,13 @@ if [ ! -x `which keychain` ]; then
   return
 fi
 
-for key in `ls $SSH_DIR/key | grep -v .pub$`
+for key in `ls $SSH_DIR | grep -v .pub$`
 do
-    keychain $SSH_DIR/key/$key
+    keychain $SSH_DIR/$key
 done
 
 if [ ! -f ~/.keychain/$HOST-sh ]; then
-    echo 'not file'
+  echo 'not file'
   return
 fi
 

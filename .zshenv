@@ -1,14 +1,18 @@
 #!/bin/zsh
 
+setopt no_global_rcs
+
 # PATH
 paths=(\
     /Developer-3.2.6/usr/bin \
     /usr/local/bin \
     /usr/local/sbin \
+    /usr/local/share/dotnet \
     $HOME/opt \
     $HOME/bin \
     $HOME/.phpenv \
     $HOME/.rbenv/shims \
+    $HOME/.pyenv/shims \
     $HOME/.composer/vendor/bin \
 )
 

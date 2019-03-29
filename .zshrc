@@ -56,6 +56,7 @@ setopt SHARE_HISTORY
 setopt ZLE
 setopt CLOBBER
 unsetopt BG_NICE
+setopt nonomatch
 
 # completion color
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
@@ -88,6 +89,11 @@ alias less="less -SRn -P '%f line:%l/%L %P\% (%Bbyte)'"
 alias diff='colordiff -u'
 #alias git=hub
 alias updatedb='sudo /usr/libexec/locate.updatedb'
+alias gs='git st'
+alias gp='git pull'
+alias gci='git ci'
+alias gdi='git di'
+alias ga='git add'
 export LESS='-R'
 export LESSOPEN='| /usr/local/bin/src-hilite-lesspipe.sh %s'
 
@@ -117,6 +123,8 @@ autoload -U compinit
 compinit -u
 
 # PHPBrew
+export PHPBREW_SET_PROMPT=1
+export PHPBREW_RC_ENABLE=1
 source $HOME/.phpbrew/bashrc
 
 # Notification if long execution time
@@ -134,6 +142,8 @@ fi
 # powerline
 powerline-daemon -q
 source /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 # bundle exec
 source $HOME/var/dotfiles/zsh/zsh-bundle-exec/zsh-bundle-exec.zsh
